@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Add Data</title>
+</head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<body>
+	<a href="index.php">Home</a>
+	<br/><br/>
+	<div class='container'>
+	<form action="add.php" method="post" name="form1">
+		 <div class="form-group">
+				<label>First Name: </label>
+				<input type="text" class="form-control" placeholder="Enter First Name" name="fname"><br>
+			 
+				<label>Last Name: </label>
+				<input type="text" class="form-control" placeholder="Enter Last Name" name="lname"><br>
+			
+				<label>Date of Birth: </label>
+				<input type="date" class="form-control" placeholder="Enter Date of Birth" name="dob"><br>
+				
+				<label>Gender: </label><br>
+					
+					<input type="radio" id="Male" name="gender" value="Male">
+ 					<label for="male">Male</label><br>
+  					<input type="radio" id="Female" name="gender" value="Female">
+  				    <label for="female">Female</label><br><br>
+
+				<label>Email: </label>
+				<input type="text" class="form-control" placeholder="Enter email" name="email"><br>
+		</div>
+			
+		<input type="submit" class="btn btn-info" name="Submit" value="Add">
+	
+	</form>
+</div>
+</body>
+</html>
+
