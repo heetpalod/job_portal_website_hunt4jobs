@@ -11,31 +11,111 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  * {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  background: #F8F8FF;
+}
 
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #5F9EA0;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+  </style>
 <body>
 	<a href="index.php">Home</a>
 	<br/><br/>
 	<div class='container'>
+		
 	<form action="add.php" method="post" name="form1">
 		 <div class="form-group">
+		 		<div class ="input-group">
 				<label>First Name: </label>
 				<input type="text" class="form-control" placeholder="Enter First Name" name="fname"><br>
-			 
+			 	</div>
+
+			 	<div class ="input-group">
 				<label>Last Name: </label>
 				<input type="text" class="form-control" placeholder="Enter Last Name" name="lname"><br>
-			
+				</div>
+
+				<div class ="input-group">
 				<label>Date of Birth: </label>
 				<input type="date" class="form-control" placeholder="Enter Date of Birth" name="dob"><br>
-				
+				</div>
+
+				<div class ="input-group">
 				<label>Gender: </label><br>
 					
 					<input type="radio" id="Male" name="gender" value="Male">
  					<label for="male">Male</label><br>
   					<input type="radio" id="Female" name="gender" value="Female">
   				    <label for="female">Female</label><br><br>
+  				</div>
 
+  				<div class ="input-group">
 				<label>Email: </label>
 				<input type="text" class="form-control" placeholder="Enter email" name="email"><br>
+				</div>
 		</div>
 			
 		<input type="submit" class="btn btn-info" name="Submit" value="Add">
