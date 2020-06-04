@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Add Personal Details</title>
+	<title>Add Skill Details</title>
 </head>
 
 <!-- Latest compiled and minified CSS -->
@@ -83,46 +83,23 @@ form, .content {
   </style>
 <body>
 	<a href="index.php" style ="padding-left: 20px; float:left;"><h3>Home</h3></a>
-	<br/><br/>
-	<div class='container'>
-		
-	<form action="add.php" method="post" name="form1">
+	<form action="add_skill.php" method="post" text-align="center" name="form4">
 		 <div class="form-group">
-		 	<h4> Add Personal Details </h4>
 		 		<div class ="input-group">
-				<label>First Name: </label>
-				<input type="text" class="form-control" placeholder="Enter First Name" name="fname"><br>
-			 	</div>
-
-			 	<div class ="input-group">
-				<label>Last Name: </label>
-				<input type="text" class="form-control" placeholder="Enter Last Name" name="lname"><br>
-				</div>
-
-				<div class ="input-group">
-				<label>Date of Birth: </label>
-				<input type="date" class="form-control" placeholder="Enter Date of Birth" name="dob"><br>
-				</div>
-
-				<div class ="input-group">
-				<label>Gender: </label><br>
-					
-					<input type="radio" id="Male" name="gender" value="Male">
- 					<label for="male">Male</label><br>
-  					<input type="radio" id="Female" name="gender" value="Female">
-  				    <label for="female">Female</label><br><br>
-  				</div>
-
-  				<div class ="input-group">
-				<label>Email: </label>
-				<input type="text" class="form-control" placeholder="Enter email" name="email"><br>
-				</div>
+          		<h4> Add Skills </h4>
+		
+				  	<input type="checkbox" id="skill1" name="Python" value="Python">
+  						<label for="vehicle1"> Python </label><br>
+  					<input type="checkbox" id="skill2" name="SQL" value="SQL">
+  						<label for="vehicle2"> SQL </label><br>
+  					<input type="checkbox" id="skill3" name="NoSQL" value="NoSQL">
+  						<label for="vehicle3"> NoSQL </label><br><br>
+		    	</div>
 		</div>
 			
-		<input type="submit" class="btn btn-info" name="Submit" value="Add">
+			<input type="submit" class="btn btn-info" name="submit_skill" value="Add">
 	
 	</form>
-</div>
 </body>
 </html>
 

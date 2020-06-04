@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Add Personal Details</title>
+	<title>Add Education Details</title>
 </head>
 
 <!-- Latest compiled and minified CSS -->
@@ -84,45 +84,47 @@ form, .content {
 <body>
 	<a href="index.php" style ="padding-left: 20px; float:left;"><h3>Home</h3></a>
 	<br/><br/>
-	<div class='container'>
 		
-	<form action="add.php" method="post" name="form1">
+	<form action="add_education.php" method="post" name="form2">
 		 <div class="form-group">
-		 	<h4> Add Personal Details </h4>
 		 		<div class ="input-group">
-				<label>First Name: </label>
-				<input type="text" class="form-control" placeholder="Enter First Name" name="fname"><br>
+          <h4> Add Education Details </h4>
+				<label>Degree: </label>
+         <select id="degree_name" class="form-control" placeholder="Enter Degree Name" name="degree_name"><br>
+          <option value="select_degree" selected disabled hidden> 
+          Select Degree 
+          </option> 
+            <option value="Doctoral">Doctoral</option>
+            <option value="Master">Master</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Associate">Associate</option>
+          </select>
+	<!-- 	<input type="text" class="form-control" placeholder="Enter Degree Name" name="degree_name"><br> -->
 			 	</div>
 
 			 	<div class ="input-group">
-				<label>Last Name: </label>
-				<input type="text" class="form-control" placeholder="Enter Last Name" name="lname"><br>
+				<label>Major: </label>
+				<input type="text" class="form-control" placeholder="Enter Major Name" name="major_name"><br>
 				</div>
 
 				<div class ="input-group">
-				<label>Date of Birth: </label>
-				<input type="date" class="form-control" placeholder="Enter Date of Birth" name="dob"><br>
+				<label>University: </label>
+				<input type="text" class="form-control" placeholder="Enter University Name" name="university_name"><br>
 				</div>
 
 				<div class ="input-group">
-				<label>Gender: </label><br>
-					
-					<input type="radio" id="Male" name="gender" value="Male">
- 					<label for="male">Male</label><br>
-  					<input type="radio" id="Female" name="gender" value="Female">
-  				    <label for="female">Female</label><br><br>
-  				</div>
+				<label>Graduation Date: </label>
+        <input type="date" class="form-control" placeholder="Enter Graduation Date" name="grad_date"><br>
 
-  				<div class ="input-group">
-				<label>Email: </label>
-				<input type="text" class="form-control" placeholder="Enter email" name="email"><br>
+  			<div class ="input-group">
+				<label>CGPA: </label>
+				<input type="number" step="0.01" class="form-control" placeholder="Enter CGPA" name="cgpa"><br>
 				</div>
 		</div>
 			
-		<input type="submit" class="btn btn-info" name="Submit" value="Add">
+		<input type="submit" class="btn btn-info" name="submit_education" value="Add">
 	
 	</form>
-</div>
 </body>
 </html>
 

@@ -58,11 +58,15 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC"); // usin
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
     	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+    	<p> <a href="index.php?logout='1'" style="color: red; float: right; margin-right: 100px;">Logout</a> </p>
     <?php endif ?>
 </div>
 
-<a href="add.html">Add New Data</a><br/><br/>
+<a href="add.html" style="float: left; margin-left: 50px;">Add Personal Details</a>
+<a href="add_education.html" style="float: left; margin-left: 100px;">Add Education Details</a>
+<a href="add_experience.html" style="float: left; margin-left: 150px;">Add Experience Details</a>
+<a href="add_skill.html" style="float: left; margin-left: 200px;">Add Skills</a><br/><br/>
+
 	<?php
 	echo "<div class='container'>";           
   	echo "<table class='table table-condensed'>";
@@ -76,7 +80,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC"); // usin
 		<td>E-mail</td>
 	</tr>
 	<?php 
-	//while($res = mysql_fetch_array($result)) { // mysql_fetch_array is deprecated, we need to use mysqli_fetch_array 
+ // mysql_fetch_array is deprecated, we need to use mysqli_fetch_array 
 	while($res = mysqli_fetch_array($result)) { 	
 			
 		echo "<tr>";
@@ -90,7 +94,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC"); // usin
 	echo "</table>";
 	echo "</div>";
 	?>
-
+ 
 
 </body>
 </html>

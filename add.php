@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title><h2>Add Data</h2></title>
+	<title><h2>Add Personal Details</h2></title>
 </head>
 
 <body>

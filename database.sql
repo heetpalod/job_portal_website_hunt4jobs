@@ -23,7 +23,7 @@ CREATE TABLE Candidate_Education
  Major varchar(70) , 
  University varchar(70),
  Graduation_Date DATE NOT NULL,
- CGPA int NOT NULL, 
+ CGPA float NOT NULL, 
  CONSTRAINT PKCandidateEducation PRIMARY KEY CLUSTERED (User_ID,Degree,Major)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE Candidate_Experience 
