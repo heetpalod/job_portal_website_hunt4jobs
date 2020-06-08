@@ -44,7 +44,7 @@ if(isset($_POST['update']))
 		$result = mysqli_query($mysqli, "UPDATE users SET first_name ='$fname', last_name = '$lname', date_of_birth = '$dob', email='$email' WHERE id=$id");
 		
 		//redirectig to the display page. In our case, it is index.php
-		header("Location: index.php");
+		header("Location: admin_view.php");
 	}
 }
 ?>

@@ -42,6 +42,7 @@ if(isset($_POST['submit_education'])) {
 		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 	} 
 
+	
 	else { 
 		// if all the fields are filled (not empty) 
 		
@@ -51,6 +52,7 @@ if(isset($_POST['submit_education'])) {
 		//display success message
 
 		echo "<font color='green'>Data added successfully.";
+		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 		//echo "<br/><a href='index.php'>View Result</a>";
 	}
 }
